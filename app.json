@@ -9,13 +9,15 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.inforce.giftgenius"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.inforce.giftgenius"
     },
     "web": {
       "bundler": "metro",
@@ -27,16 +29,15 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 274,
+          "image": "./assets/images/logo-design-black.png",
+          "imageWidth": 600,
           "resizeMode": "contain",
-          "backgroundColor": "#000000"
-        }
-      ],
-      [
-        "expo-font",
-        {
-          "fonts": ["node_modules/@expo-google-fonts/inter/Inter_900Black.ttf"]
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "image": "./assets/images/logo-design-white.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#000000"
+          }
         }
       ]
     ],
