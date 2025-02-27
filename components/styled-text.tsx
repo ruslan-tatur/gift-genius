@@ -9,7 +9,7 @@ interface StyledTextProps extends TextProps {
 const StyledText = ({ style, children, ...props }: StyledTextProps) => {
   const { colors } = useTheme();
 
-  return <Text style={[style, { color: colors.text }]} {...props}>{children}</Text>;
+  return <Text style={[{ color: colors.text }, style]} {...props}>{children}</Text>;
 };
 
 export default StyledText;
